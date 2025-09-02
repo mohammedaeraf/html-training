@@ -1,4 +1,60 @@
+/* Basic Reset */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  color: #333; /* Default text color */
+  background-color: #fafafa;
+}
+
+/* Headings */
+h1 {
+  font-size: 2em; /* 2 x 16 px = 32 px */
+  color: #222;
+  margin: 20px 0 10px;
+}
+
+h2 {
+  font-size: 1.5em;
+  color: #444;
+  margin: 15px 0 8px;
+}
+
+/* Paragraph */
 p {
-  text-decoration: underline;
-  color: green;
+  margin: 10px 0;
+  color: #555;
+}
+
+/* Lists */
+ul {
+  margin: 10px 20px;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 6px;
+  color: #444;
+}
+
+/* Basic text colors (utility classes) */
+.text-primary {
+  color: #007bff; /* blue */
+}
+
+.text-success {
+  color: #28a745; /* green */
+}
+
+.text-danger {
+  color: #dc3545; /* red */
+}
+
+.text-muted {
+  color: #6c757d; /* gray */
+}
+
+.text-italic {
+  font-style: italic;
 }
