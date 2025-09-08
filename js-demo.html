@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="bs.css" />
+    <script>
+      function changePara() {
+        let para1 = document.getElementById("para1");
+        para1.style.color = "red";
+        para1.style.fontStyle = "italic";
+        para1.style.border = "2px solid gray";
+        para1.style.padding = "20px";
+      }
+    </script>
+  </head>
+  <body>
+    <div class="container">
+      <h2 class="my-4">JS Demo</h2>
+      <p id="para1">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem,
+        soluta maiores dolor vel voluptatibus perspiciatis dicta esse, ut eos
+        facere accusantium commodi sequi atque ducimus necessitatibus
+        consectetur doloremque a quis.
+      </p>
+      <div class="text-center">
+        <button class="btn btn-primary w-100" onclick="changePara()">
+          Click to Change Paragraph
+        </button>
+      </div>
+    </div>
+  </body>
+</html>
