@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM Manipulation Demo</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+    />
+    <script>
+      function updateContent() {
+        // Change Image Source
+        let imgElement = document.getElementById("myImage");
+        imgElement.src =
+          "https://via.placeholder.com/300x150.png?text=New+Image";
+
+        // Update Paragraph Text
+        let textPara = document.getElementById("textPara");
+        textPara.textContent =
+          "The content has been updated dynamically using JavaScript.";
+
+        // Change Background Color
+        document.body.style.backgroundColor = "#f0f8ff";
+      }
+    </script>
+  </head>
+  <body class="container my-4">
+    <h2 class="mb-4">DOM Manipulation Example</h2>
+
+    <img
+      id="myImage"
+      src="https://via.placeholder.com/300x150.png?text=Original+Image"
+      class="img-fluid mb-3"
+      alt="Placeholder Image"
+    />
+
+    <p id="textPara">
+      This is the original paragraph text. Click the button to see changes.
+    </p>
+
+    <button class="btn btn-success" onclick="updateContent()">
+      Update Content
+    </button>
+  </body>
+</html>
